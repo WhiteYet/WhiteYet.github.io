@@ -27,4 +27,4 @@ Here is the sequence of Commit CI
 
 
   [1]: https://conan.io/
-  [2]: ./images/commit_ci.png "commit_ci.png"
+  [2]: https://www.dropbox.com/s/n4xudi74x5othwp/commit_ci.png?dl=0
