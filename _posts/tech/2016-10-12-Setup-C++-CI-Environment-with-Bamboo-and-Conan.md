@@ -23,9 +23,18 @@ There are 2 kinds of CI in our design: Commit CI & Daily CI. There may be high l
 ## Commit CI
 Every time, when a commit is pushed, this CI is triggered. It pulls code from Stash, download packages needed from Conan, and then build and run unit tests.
 
-Here is the sequence of Commit CI
+Here is the sequence of Commit CI.
 ![Sequence of Commit CI][2]
 
+## Daily CI
+Daily CI is almost same as Commit CI, except two points:
+
+ - Compared to being triggered by commit, Daily CI is triggered fixed time every day.
+ - If everything is sucessful in CI, the generated binary will be uploaded to Conan as a new version of develop branch.
+ 
+Here is the sequence of Daily CI.
+![Sequence of Daily CI][3]
 
   [1]: https://conan.io/
   [2]: https://www.dropbox.com/s/n4xudi74x5othwp/commit_ci.png?raw=1
+  [3]: https://www.dropbox.com/s/97avl7ernkc31ri/daily_ci.png?raw=1
