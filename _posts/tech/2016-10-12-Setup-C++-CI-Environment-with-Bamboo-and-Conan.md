@@ -22,6 +22,7 @@ There are 2 kinds of CI in our design: Commit CI & Daily CI. There may be high l
 
 ## Commit CI
 Every time, when a commit is pushed, this CI is triggered. It pulls code from Stash, download packages needed from Conan, and then build and run unit tests.
+
 Here is the sequence of Commit CI
 ![Sequence of Commit CI][2]
 
