@@ -21,7 +21,7 @@ That's all ideas about new CI environment.
 We use a couple of tools to build the environment. Here is the list of them.
 
 | Tool name| Comments|
-|-|-|
+|:-|:-|
 | Bamboo| This is the CI platform we use|
 | Conan| Package management tool. We use it to manage our dependencies and our generated execuables and libraries.|
 | GTest| This library will be handled by Conan, obviously, it is used to do unit test.|
@@ -62,8 +62,9 @@ Here is the sequence of Release CI.
 
 # Artificals List
 To implement the CI environment, shell scripts are used to execute tasks in CI workflow. Here is the list of artificals in the workflow.
+
 | Name| Description|
-|-|-|
+|:-|:-|
 | code-analysis.sh| Script to execute static code analysis.|
 | build.sh| Script to build project.|
 | run-unit-tests.sh| Script to run unit tests.|
